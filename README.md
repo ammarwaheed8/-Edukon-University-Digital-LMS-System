@@ -81,10 +81,10 @@ No build tools or frameworks required. Just open in your browser.
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/edukon-lms.git
+git clone https://github.com/ammarwaheed8/-Edukon-University-Digital-LMS-System.git
 
 # Navigate into the folder
-cd edukon-lms
+cd Edukon-University-Digital-LMS-System
 
 # Open in browser
 open index.html
@@ -123,5 +123,6 @@ This project is for **portfolio and demonstration purposes** only.
 ## 🙋‍♂️ Author
 
 **Ammar Waheed**  
-[LinkedIn](https://linkedin.com/in/yourprofile) | 
+[Website Live Link](https://edukon-ammarwaheed.netlify.app/) |
+[LinkedIn](https://pk.linkedin.com/in/ammar-waheed-a6a50b258) | 
 [GitHub](https://github.com/ammarwaheed8)
