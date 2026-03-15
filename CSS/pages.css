@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow", serif;
+}
+
+*:not(:hover) {transition: all 0.4s ease-in-out 0.1ms;}
+
+
+/* ------ Section-1 CSS Styling ------ */
+#section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    background-image: url("img/sec-1-bg.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-navbar {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.upper-area {
+    border-bottom: 1px solid #d8d7d7c7;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav-contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-contact-details span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    font-size: 16px;
+    color: #555555;
+    gap: 10px;
+}
+
+#contact-1 {
+    border-right: 1px solid #d8d7d7c7;
+    height: 50px;
+}
+
+#nav-social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-social-links p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #a3a3a3;
+    padding: 0 10px 0 0;
+}
+
+#nav-social-links a {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    color: #f16126;
+    border: 1px solid #edededad;
+}
+
+#nav-social-links :nth-child(2),
+#nav-social-links :nth-child(6) {
+    border: none;
+}
+
+.lower-area {
+    width: 94%;
+    height: fit-content;
+    padding: 19px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-content-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 204px;
+    height: 52px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navlink-content {
+    display: flex;
+    flex-wrap: nowrap;
+    width: fit-content;
+    height: fit-content;
+}
+
+.navlink {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 18px;
+    color: #101115;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.navlink:last-child {
+    padding-bottom: 23px;
+}
+
+.navlink:hover #bar-1 {
+    transform: rotate(90deg);
+    transition: all 0.4s ease-in-out 0.1ms;
+}
+
+
+.plus_icon {
+    margin: 0 6px 0 11px;
+    
+}
+
+#bar-1 {
+    background-color: #101115;
+    width: 3px;
+    height: 14px;
+    display: flex;
+    position: relative;
+    top: 3px;
+    left: 14px;
+}
+
+#bar-2 {
+    background-color: #101115;
+    width: 2.5px;
+    height: 14px;
+    display: flex;
+    position: relative;
+    top: -11px;
+    left: 14px;
+    transform: rotate(90deg);
+}
+ 
+.add-user-btns {margin: 0 0 0 15px}
+
+#login-btn {
+    background-color: #ffffff;
+    color: #f16126;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 19px 17px;
+    text-decoration: none;
+}
+
+#login-btn i {
+    color: #f16126;
+    font-size: 15px;
+    margin-right: 4px;
+}
+
+#signup-btn {
+    background-color: #f16126;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 19px 17px;
+    text-decoration: none;
+}
+
+#signup-btn i {
+    color: #ffffff;
+    font-size: 15px;
+    margin-right: 4px;
+}
+
+/* Mobile Navbar Menu with Hamburger */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.p-menu1{
+   height: 100%;
+}
+
+/* Hamburger */
+.hamburger1 {
+  height: 45px;
+  margin: 10px 10px 10px 30px;
+  display: none;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  z-index: 120;
+}
+
+.hamburger1 div {
+  background-color: #f16126;
+  position: relative;
+  width: 32px;
+  height: 4px;
+  margin-top: 7px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#toggle1 {
+  display: none;
+}
+
+#toggle1:checked + .hamburger1 .top {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-top: 22.5px;
+}
+
+#toggle1:checked + .hamburger1 .meat {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+#toggle1:checked + .hamburger1 .bottom {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+#toggle1:checked ~ .menu1 {
+  height: 370px;
+  width: 95%;
+}
+
+#toggle1:not(:checked) ~ .menu1 {
+  width: 95%;
+}
+
+
+/* Menu */
+.menu1 {
+    left: 24px;
+    top: 145px;
+    position: absolute;
+    width: 95%;
+    background-color: #f16126;
+    margin: 0;
+    display: -ms-grid;
+    display: none;
+    grid-template-rows: 1fr repeat(4, 0.5fr);
+    grid-row-gap: 25px;
+    padding: 0;
+    list-style: none;
+    clear: both;
+    width: auto;
+    text-align: center;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+    z-index: 120;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.menu1 a:first-child {
+    margin-top: 40px;
+}
+
+.menu1 a:last-child {
+    margin-bottom: 40px;
+}
+
+.link1 {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    font: 700 20px 'Oswald', sans-serif;
+}
+
+.link1:hover {
+    background-color: #fff;
+    color: rgb(61, 61, 61);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/* - Sec-1-Container Content CSS - */
+.sec-1-container {
+  width: 94%;
+  height: fit-content;
+  padding: 120px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sec-1-container h2 {
+  font-size: 43px;
+  font-weight: 700;
+  color: #101115;
+  margin: 0 0 15px 0;
+}
+
+.sec-1-container p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #101115;
+  margin: 0 0 15px 0;
+}
+
+.sec-1-container p span {color: #6C757D;}
+
+/* ------ Section-2 CSS Styling ------ */
+#section-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff9f1;
+  padding: 80px;
+  gap: 40px;
+}
+
+.oops-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 30px;  
+  background-color: #ffffff;
+  box-shadow: 0 0 10px hsla(0, 0%, 53%, .1);
+}
+
+.oops-container h2 {
+  font-size: 60px;
+  font-weight: 800;
+  color: #f16126;
+}
+
+.oops-container p {
+  font-size: 45px;
+  font-weight: 400;
+  color: #101115;
+  margin: 0 0 12px 0;
+}
+
+.search-container {
+  width: 450px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 25px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px hsla(0, 0%, 53%, .1);
+}
+
+.search-container h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #101115;
+  margin: 0 0 12px 0;
+}
+
+.search-container p {
+  font-size: 19px;
+  font-weight: 500;
+  color: #6C757Dba;
+  margin: 0 0 15px 0;
+}
+
+.search-box {
+  width: 366px;
+  height: 46px;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ecf0f3;
+}
+
+.search-box i {
+  font-size: 25px;
+  margin: 0 7px 0 0;
+}
+
+#search-bar {
+  border: 1px solid red;
+  width: 100%;
+  height: auto;
+  padding: 0px 0px 0px 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555555;
+}
+
+
+/* ------ Footer CSS Styling ------ */
+footer {
+  padding: 10px 10px 110px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: white;
+  background-color: #1f1f33;
+}
+
+#upper-footer-img {
+  margin: 5px;
+  position: relative;
+  top: -30px;
+  left: -630px;
+}
+
+#lower-footer-img {
+  margin: 5px;
+  position: relative;
+  top: 120px;
+  left: 630px;
+}
+
+.upper-footer-container {
+  width: 77%;
+  padding: 0 0 60px 0;
+  margin: 0 0 90px 0;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #c3c3c34f;
+}
+
+#upper-footer-text {
+  max-width: 545px;
+  width: fit-content;
+  font-size: 34px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+.footer-mail-box {
+  width: 645px;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: white;
+}
+
+.footer-mail-box i {
+  font-size: 30px;
+  top: 0px;
+  left: -434px;
+  position: relative;
+  color: #26c976;
+}
+
+#footer-mail {
+  padding: 0 0 0 64px;
+  width: 73%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+#footer-mail:focus {
+  border: transparent;
+}
+
+#footer-mail::placeholder {
+  font-size: 17px;
+}
+
+#subs-btn {
+  top: 0px;
+  left: -6px;
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  width: 162px;
+  height: 54px;
+  border: none;
+  background-color: #26c976;
+}
+
+.lower-footer-container {
+  width: 77%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.footer-nav-heading {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.green-bar {
+  width: 50px;
+  height: 2px;
+  display: block;
+  margin: 15px 0 25px 0;
+  background-color: #26c976;
+}
+
+.footer-nav-links {
+  gap: 28px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-nav-links a {
+  font-size: 17px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#copyright-section {
+  width: 100%;
+  height: 110px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-spacing: 3px;
+}
+
+#copyright-section p {
+  font-size: 19px;
+  font-weight: 400;
+  color: #1f1f33;
+}
+
+#copyright-section p a {
+  font-size: 19px;
+  font-weight: 700;
+  color: #1f1f33;
+  text-decoration: none;
+}
+
+
+/* ---------- Media Query for Max Width 1580px ---------- */
+@media only screen and (max-width: 1580px) {
+/* ------ Section-1 CSS Styling ------ */
+
+/* ------ Footer CSS Styling ------ */
+#upper-footer-text {
+  max-width: 545px;
+  font-size: 34px;
+}
+
+.footer-mail-box {
+  width: 645px;
+  height: 66px;
+}
+
+.footer-mail-box i {
+  font-size: 30px;
+  top: 0px;
+  left: -434px;
+}
+
+#footer-mail {
+  padding: 0 0 0 64px;
+  width: 73%;
+  height: 100%;
+}
+
+#footer-mail::placeholder {
+  font-size: 17px;
+}
+
+#subs-btn {
+  top: 0px;
+  left: -6px;
+  font-size: 18px;
+  padding: 10px;
+  width: 162px;
+  height: 54px;
+}
+
+}
+
+/* ---------- Media Query for Max Width 1280px ---------- */
+@media only screen and (max-width: 1280px) {
+/* ------ Section-1 CSS Styling ------ */
+
+/* ------ Footer CSS Styling ------ */
+#upper-footer-img, #lower-footer-img {display: none;}
+
+}
+
+/* ---------- Media Query for Max Width 991px ---------- */
+@media only screen and (max-width: 991px) {
+/* ------ Section-1 CSS Styling ------ */
+.upper-area, #navbar {display: none;}
+
+.hamburger1, .menu1 {display: grid;}
+
+}
+
+/* ---------- Media Query for Max Width 768px ---------- */
+@media only screen and (max-width: 768px) {
+/* ------ Section-1 CSS Styling ------ */
+}
+
+/* ---------- Media Query for Max Width 576px ---------- */
+@media only screen and (max-width: 576px) {
+/* ------ Section-1 CSS Styling ------ */
+.add-user-btns {display: none;}
+
+/* ------ Section-2 CSS Styling ------ */
+.search-box {width: 280px;}
+
+}
+
+/* ---------- Media Query for Max Width 390px ---------- */
+@media only screen and (max-width: 390px) {
+/* ------ Section-1 CSS Styling ------ */
+
+/* ------ Section-2 CSS Styling ------ */
+.search-box {width: 220px;}
+
+}
