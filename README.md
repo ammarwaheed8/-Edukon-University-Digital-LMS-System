@@ -4,6 +4,14 @@ A modern, responsive <strong>Learning Management System (LMS)</strong> frontend 
 
 ---
 
+---
+
+## 🌐 Live Preview
+
+> Live Link: <a href="https://edukon-ammarwaheed.netlify.app/" target="_blank">Visit Website</a>
+
+---
+
 ## 📌 About the Project
 
 **Edukon** is a university-level digital Learning Management System (LMS) frontend. It provides a clean, professional interface for students and educators to interact with course content, browse programs, read blog posts, and get in touch with the institution.
